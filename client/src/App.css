@@ -1,38 +1,42 @@
-.App {
+.welcome{
   text-align: center;
+  justify-content:center ;
+}
+.title {
+  border-top: solid 5px black;
+  background-color: lightskyblue;
+
+  border-bottom: 5px solid black;
+}
+.welcome p{
+  color: blueviolet;
+}
+.headfeats{
+  border-top: solid 5px black;
+background-color: lightskyblue;
+  border-bottom: solid 5px black;
+ 
+}
+.feats{
+  margin: 10px;
+  padding: 10px;
+}
+.feats div {
+  color: blueviolet;
+  text-align: center; /* This ensures the text inside li is left-aligned */
+  padding: 10px;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.log-sign{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+.log-sign button{
+  font-size: 20px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: blueviolet;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
