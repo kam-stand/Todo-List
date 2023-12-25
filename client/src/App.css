@@ -9,7 +9,7 @@
   border-bottom: 5px solid black;
 }
 .welcome p{
-  color: blueviolet;
+  color: black;
 }
 .headfeats{
   border-top: solid 5px black;
@@ -22,7 +22,7 @@ background-color: lightskyblue;
   padding: 10px;
 }
 .feats div {
-  color: blueviolet;
+  color: black;
   text-align: center; /* This ensures the text inside li is left-aligned */
   padding: 10px;
   margin: 10px;
@@ -40,3 +40,103 @@ background-color: lightskyblue;
   border: none;
   border-radius: 5px;
 }
+.task_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.Header{
+  background-color: salmon;
+} 
+.header_container{
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+
+}
+.header_user{
+  border-radius: 10px;
+  width: fit-content;
+  border: 3px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.profile, .header_user{
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+.header_search{
+ align-items: center;
+ 
+}
+
+.header_input{
+  border: none;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: black;
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border: solid 3px black;
+}
+
+
+.sidebar_container {
+  border-radius: 10px;
+  border: solid 2px black;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  background-color: salmon;
+
+}
+.sidebar_container div{
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer_container {
+  background-color: rgb(189, 147, 229); /* Add your desired background color */
+  padding: 10px; /* Add padding to provide some space */
+  text-align: center; /* Center-align text or content inside the footer */
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  width: 100%; /* Make the footer take the full width of the viewport */
+  bottom: 0; /* Position the footer at the bottom */
+  border-top: solid 3px black;
+  margin: 10px;
+}
+.event_contain{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.event{
+  border-radius: 5px;
+  background-color: lightpink;
+  color: whitesmoke;
+  border: solid 2px black;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+}
+
+
