@@ -1,9 +1,7 @@
 export default function Signup() {
-    
-    return (
-        <>
-        <button>Signup</button>          
-
-        </>
-    )
+  return (
+    <>
+      <button>Signup</button>
+    </>
+  );
 }

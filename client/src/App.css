@@ -1,38 +1,86 @@
-.welcome{
+.welcome {
   text-align: center;
-  justify-content:center ;
+  justify-content: center;
 }
 .title {
   border-top: solid 5px black;
   background-color: lightskyblue;
-
+  font-style: italic;
   border-bottom: 5px solid black;
 }
-.welcome p{
-  color: black;
-}
-.headfeats{
-  border-top: solid 5px black;
-background-color: lightskyblue;
-  border-bottom: solid 5px black;
- 
-}
-.feats{
+
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 10px;
   padding: 10px;
-}
-.feats div {
   color: black;
-  text-align: center; /* This ensures the text inside li is left-aligned */
-  padding: 10px;
-  margin: 10px;
+  /* border-radius: 5px;
+  border: solid 2px black; */
 }
 
-.log-sign{
+@keyframes easeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* start slightly to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.information{
+  background-image: url("C:\Users\sharm\OneDrive\Desktop\TODO LIST\Todo-List\client\public\space.avif");
+  border-bottom: solid 2px black;
+  height: fit-content;
+  color: white;
+}
+
+
+.feat-card {
+  /* ... other styles ... */
+  border: solid 2px white;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  animation-name: easeInAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; /* Keeps the element at the end state of the animation */
+  background-color: lightskyblue;
+  vertical-align: top;
+  
+}
+
+.feat-card:nth-child(1) {
+  animation-delay: 0.3s; /* Adjust delays as needed */
+}
+
+.feat-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.feat-card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* 
+
+
+*/
+
+
+.log-sign {
   display: flex;
   justify-content: space-evenly;
 }
-.log-sign button{
+.log-sign button {
   font-size: 20px;
   color: white;
   background-color: blueviolet;
@@ -40,24 +88,17 @@ background-color: lightskyblue;
   border: none;
   border-radius: 5px;
 }
-.task_container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
 
-.Header{
+.Header {
   background-color: salmon;
-} 
-.header_container{
+}
+.header_container {
   display: flex;
   justify-content: space-evenly;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-
-
 }
-.header_user{
+.header_user {
   border-radius: 10px;
   width: fit-content;
   border: 3px solid black;
@@ -72,17 +113,17 @@ background-color: lightskyblue;
   cursor: pointer;
 }
 
-.profile, .header_user{
+.profile,
+.header_user {
   display: inline-block;
   vertical-align: top;
   margin: 10px;
 }
-.header_search{
- align-items: center;
- 
+.header_search {
+  align-items: center;
 }
 
-.header_input{
+.header_input {
   border: none;
   border-radius: 10px;
   background-color: skyblue;
@@ -94,7 +135,6 @@ background-color: lightskyblue;
   border: solid 3px black;
 }
 
-
 .sidebar_container {
   border-radius: 10px;
   border: solid 2px black;
@@ -104,9 +144,8 @@ background-color: lightskyblue;
   margin: 10px;
   padding: 10px;
   background-color: salmon;
-
 }
-.sidebar_container div{
+.sidebar_container div {
   padding: 10px;
   margin: 10px;
   align-items: center;
@@ -123,13 +162,13 @@ background-color: lightskyblue;
   border-top: solid 3px black;
   margin: 10px;
 }
-.event_contain{
+.event_contain {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
 
-.event{
+.event {
   border-radius: 5px;
   background-color: lightpink;
   color: whitesmoke;
@@ -139,4 +178,84 @@ background-color: lightskyblue;
   padding: 5px;
 }
 
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* Adjust the distance of the float effect */
+  }
+}
 
+@keyframes floatleftright {
+  0%, 100% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(8px); /* Adjust the distance of the float effect */
+  }
+}
+.floatleftright{
+  animation: floatleftright 2s ease-in-out infinite;
+}
+.floating_icon {
+  animation: floatAnimation 2s ease-in-out infinite; /* Adjust the duration of the animation */
+}
+
+/* Assuming you have a background image named "background-image.jpg" in the same folder as your CSS */
+
+.about_container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: solid 2px black;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+} 
+
+.contact_container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: solid 2px black;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* checkbox */
+
+
+.checkbox{
+  border: solid 2px black;
+  height: 20px;
+  width: 20px;
+  
+}
+
+
+
+.task{
+  display: flex;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: skyblue;
+}
+
+.ranknum{
+  height: 30px;
+  width: 50px;
+}
+
+.task > div{
+  text-align: center;
+}

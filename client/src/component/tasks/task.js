@@ -1,39 +1,35 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from "axios";
+import { MdIndeterminateCheckBox } from "react-icons/md";
 
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = "http://localhost:8000";
 
-export default function Task() {
-  const [tasks, setTasks] = useState([]);
+export default function Task(){
+  return(
 
-  useEffect(() => {
-    const fetchTasks = async () => {
-      try {
-        const response = await axios.get('/task');
-        setTasks(response.data);
-      } catch (error) {
-        console.error('Error fetching tasks:', error);
-      }
-    };
-
-    fetchTasks();
-  }, [tasks]); 
-
-  const renderTask = () => {
-    return (
-      tasks.map((task) => (
-        <div className='task_container' key={task._id}>
-          <div className='task_rank'>{task.rank}</div>
-          <div className='task_text'>{task.text}</div>
-          <div className='task_complete'>{task.completed ? 'Completed': 'incomplete'}</div>
-        </div>
-      ))
-    );
-  };
-
-  return (
     <>
-      {renderTask()}
+    <div className="wrapper">
+
+      <form className="task">
+
+      <div className="checkwrapper">
+        <h1>Complete</h1>
+      <input type="checkbox" className="checkbox"></input>
+      </div>
+
+      <div className="taskwrapper">
+        <h1>Task</h1>
+      <input type="text" className="takstext"></input>
+      </div>
+
+      <div className="rankwrapper">
+        <h1>Rank</h1>
+      <input type="number" className="ranknum"></input>
+      </div>
+
+      </form>
+
+    </div>
+    
     </>
-  );
+  )
 }
