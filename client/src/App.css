@@ -233,29 +233,31 @@
 /* checkbox */
 
 
-.checkbox{
-  border: solid 2px black;
-  height: 20px;
-  width: 20px;
-  
+.icon_t:hover {
+  color: blueviolet;
 }
 
-
-
-.task{
+.task_comp{
   display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: dashed 3px black;
+  background-color: salmon;
+  align-content: center;
+}
+
+.form_task {
   display: flex;
   margin: 10px;
   padding: 10px;
-  justify-content: space-between;
-  background-color: skyblue;
+  justify-content: space-evenly;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+.form_task input{
+  border: none;
+  font-size: larger;
 }
 
-.ranknum{
-  height: 30px;
-  width: 50px;
-}
-
-.task > div{
-  text-align: center;
-}

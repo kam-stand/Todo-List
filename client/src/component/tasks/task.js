@@ -1,34 +1,36 @@
-import axios from "axios";
-import { MdIndeterminateCheckBox } from "react-icons/md";
+import { GrAlarm } from "react-icons/gr";
+import { VscTasklist } from "react-icons/vsc";
+import { LuListTodo } from "react-icons/lu";
+import { ImListNumbered } from "react-icons/im";
 
+import axios from "axios";
+import Taskform from "./task_form";
+import { useState } from "react";
 axios.defaults.baseURL = "http://localhost:8000";
 
 export default function Task(){
+  const [task, addTask] = useState(false)
   return(
 
     <>
-    <div className="wrapper">
-
-      <form className="task">
-
-      <div className="checkwrapper">
-        <h1>Complete</h1>
-      <input type="checkbox" className="checkbox"></input>
-      </div>
-
-      <div className="taskwrapper">
-        <h1>Task</h1>
-      <input type="text" className="takstext"></input>
-      </div>
-
-      <div className="rankwrapper">
-        <h1>Rank</h1>
-      <input type="number" className="ranknum"></input>
-      </div>
-
-      </form>
-
-    </div>
+      <section className="wrapper">
+        <div className="task_comp">
+          <div className="task_list">
+            <LuListTodo className="icon_t" size={32}/>
+          </div>
+          <div className="task_list">
+              <VscTasklist size={32} className="icon_t"/>
+          </div>
+          <div className="task_list">
+              <GrAlarm className="icon_t" size={32}  />
+          </div>
+          <div className="task_list">
+            <ImListNumbered className="icon_t" size={32}/>
+          </div>
+        </div>
+        <Taskform/>
+      </section>
+  
     
     </>
   )
