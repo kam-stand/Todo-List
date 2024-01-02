@@ -255,9 +255,27 @@
   justify-content: space-evenly;
   border: solid 2px black;
   border-radius: 5px;
+  align-content: center;
+}
+.form_task p{
+  display: inline-block;
 }
 .form_task input{
   border: none;
   font-size: larger;
+  height: auto;
+  width: auto;
 }
-
+.task_button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.add_task, .del_task{
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: dashed 2px black;
+  color: blueviolet;
+}

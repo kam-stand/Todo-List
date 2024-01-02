@@ -5,11 +5,11 @@ import { ImListNumbered } from "react-icons/im";
 
 import axios from "axios";
 import Taskform from "./task_form";
-import { useState } from "react";
+import Event from "./event/event";
 axios.defaults.baseURL = "http://localhost:8000";
 
 export default function Task(){
-  const [task, addTask] = useState(false)
+  
   return(
 
     <>
@@ -30,8 +30,7 @@ export default function Task(){
         </div>
         <Taskform/>
       </section>
-  
-    
+    <Event/>    
     </>
   )
 }
