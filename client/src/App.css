@@ -162,21 +162,7 @@
   border-top: solid 3px black;
   margin: 10px;
 }
-.event_contain {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
 
-.event {
-  border-radius: 5px;
-  background-color: lightpink;
-  color: whitesmoke;
-  border: solid 2px black;
-  width: fit-content;
-  margin: 5px;
-  padding: 5px;
-}
 
 @keyframes floatAnimation {
   0%, 100% {
@@ -264,8 +250,16 @@
   border: none;
   font-size: larger;
   height: auto;
-  width: auto;
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
 }
+.form_task input:hover{
+  background-color: lightgray;
+}
+
 .task_button{
   display: flex;
   justify-content: space-evenly;
@@ -276,6 +270,12 @@
   height: fit-content;
   margin: 10px;
   padding: 10px;
-  border: dashed 2px black;
-  color: blueviolet;
+  border: solid 2px black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+.add_task:hover, .del_task:hover{
+  background-color: lightgray;
+  cursor: pointer;
 }
